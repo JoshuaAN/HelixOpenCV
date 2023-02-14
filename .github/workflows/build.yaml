@@ -1,7 +1,9 @@
 name: first-test
-on: [push]
-  jobs:
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        run: echo "test"
+
+on: [pull_request, push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "test"
