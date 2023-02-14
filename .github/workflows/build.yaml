@@ -3,7 +3,7 @@ name: first-test
 on: [pull_request, push]
 
 jobs:
-  test:
+  fetch-dependencies:
     runs-on: ubuntu-latest
     steps:
       - name: Clone OpenCV repository
