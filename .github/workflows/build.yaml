@@ -6,7 +6,11 @@ jobs:
   fetch-dependencies:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone OpenCV repository
+      - name: Clone OpenCV
         uses: actions/checkout@v3
         with:
           repository: opencv/opencv
+      - name: Clone OpenCV contrib
+        uses: actions/checkout@v3
+        with:
+          repository: opencv/opencv-contrib
